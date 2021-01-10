@@ -121,16 +121,22 @@ ul {
   display: flex;
   flex-direction: column;
   position: relative;
+  left: 3rem;
   animation-name: mes_a;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
 
 #mes_a_label {
   display: flex;
   flex-direction: column;
   position: relative;
+  left: 3rem;
   animation-name: mes_a_label;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
 }
