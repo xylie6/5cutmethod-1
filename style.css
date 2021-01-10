@@ -20,25 +20,39 @@ ul {
   align-items: left;
 }
 
-input {
-  max-width: 25%;
+@media (max-width: 1500px) {
+  input {
+    max-width: 10%;
+  }
 }
 
-@media (min-width: 650px) {
+@media (max-width: 1150px) {
+  input {
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 900px) {
   input {
     max-width: 20%;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+  input {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
   input {
     max-width: 40%;
   }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 330px) {
   input {
-    max-width: 60%;
+    max-width: 50%;
   }
 }
 
@@ -68,11 +82,11 @@ input {
     left: 3rem;
   }
 
-  25% {
+  50% {
     left: 0;
   }
 
-  60% {
+  70% {
     left: 1rem;
   }
 
@@ -87,12 +101,12 @@ input {
     left: 3rem;
   }
 
-  25% {
+  50% {
     background-color: rgb(231, 216, 207);
     left: 0;
   }
 
-  60% {
+  70% {
     background-color: rgb(231, 216, 207);
     left: 1rem;
   }
@@ -108,8 +122,8 @@ input {
   flex-direction: column;
   position: relative;
   animation-name: mes_a;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 #mes_a_label {
@@ -117,6 +131,6 @@ input {
   flex-direction: column;
   position: relative;
   animation-name: mes_a_label;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
