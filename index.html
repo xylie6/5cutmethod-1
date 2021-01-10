@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>5 Cut Method</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://ssl.gstatic.com/docs/script/css/add-ons1.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="instructions">
+      <ul>
+        <li>Use only decimal numbers</li>
+        <li>Assumes Pivot is on right side</li>
+        <li>
+          Assumes you know what the 5 cut method is, and the measurements
+          required, it just does the math for you
+        </li>
+        <li>
+          If this is all new to you, watch
+          <a href="https://www.youtube.com/watch?v=UbG-n--LFgQ"
+            >Bill Ng's excellent video</a
+          >
+        </li>
+      </ul>
+    </section>
+    <section id="inputs">
+      <form id="input_list">
+        <label for="measure_a" id="mes_a_label">Measurement A:</label>
+        <input type="number" name="a" step=".001" id="mes_a" required />
+        <label for="measure_a">Measurement B:</label>
+        <input type="number" name="b" step=".001" required />
+        <label for="measure_a">Length of 5th. Cut:</label>
+        <input type="number" name="cut" step=".001" required />
+        <label for="measure_a">Distance from Pivot to end of fence:</label>
+        <input type="number" name="pivot" step=".001" id="pivot" required />
+
+        <section id="result">
+          <span id="move"></span>
+          <span id="correct"></span>
+        </section>
+        <section id="buttons">
+          <button id="calc_btn" type="submit">Calculate</button>
+          <button id="reset_btn" type="reset">Reset</button>
+        </section>
+      </form>
+    </section>
+    <script src="script.js" async defer></script>
+  </body>
+</html>

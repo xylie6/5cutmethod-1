@@ -1,0 +1,122 @@
+body {
+  font-size: 15px;
+  margin-left: 7em;
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+#inputs {
+  align-items: center;
+}
+
+#input_list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+input {
+  max-width: 25%;
+}
+
+@media (min-width: 650px) {
+  input {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 550px) {
+  input {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 300px) {
+  input {
+    max-width: 60%;
+  }
+}
+
+#result {
+  margin-top: 1em;
+  font-size: large;
+  display: none;
+}
+
+#buttons {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+#calc_btn {
+  margin-right: 1em;
+}
+
+#reset_btn {
+  margin: 0;
+}
+
+@keyframes mes_a_label {
+  0% {
+    left: 3rem;
+  }
+
+  25% {
+    left: 0;
+  }
+
+  60% {
+    left: 1rem;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes mes_a {
+  0% {
+    background-color: rgb(0, 0, 0, 0);
+    left: 3rem;
+  }
+
+  25% {
+    background-color: rgb(231, 216, 207);
+    left: 0;
+  }
+
+  60% {
+    background-color: rgb(231, 216, 207);
+    left: 1rem;
+  }
+
+  100% {
+    background-color: rgb(0, 0, 0, 0);
+    left: 0;
+  }
+}
+
+#mes_a {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation-name: mes_a;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
+
+#mes_a_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation-name: mes_a_label;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+}
