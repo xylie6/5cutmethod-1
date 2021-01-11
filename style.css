@@ -147,7 +147,7 @@ ul {
   animation-name: mes_a;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-delay: 300ms;
+  animation-delay: 250ms;
   animation-fill-mode: forwards;
 }
 
@@ -159,6 +159,6 @@ ul {
   animation-name: mes_a_label;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
-  animation-delay: 300ms;
+  animation-delay: 250ms;
   animation-fill-mode: forwards;
 }
